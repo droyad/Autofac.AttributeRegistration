@@ -1,0 +1,32 @@
+using System;
+using System.ComponentModel;
+using Autofac.Builder;
+
+namespace Autofac
+{
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
+    public abstract class AutofacRegistrationAttribute : Attribute
+    {
+        internal abstract void Register(ContainerBuilder builder, Type type);
+
+        protected AutofacRegistrationAttribute()
+        {
+            AsImplementedInterface = true;
+        }
+
+        public string Name { get; set; }
+             
+        [DefaultValue(true)]
+        public bool AsImplementedInterface { get; set; }
+
+        protected void Register<TLimit>(IRegistrationBuilder<TLimit, ConcreteReflectionActivatorData, SingleRegistrationStyle> registrationBuilder, Type type)
+        {
+            if (Name != null)
+                registrationBuilder.Named(Name, type);
+
+            if (AsImplementedInterface)
+                registrationBuilder.AsImplementedInterfaces();
+
+        }
+    }
+}
