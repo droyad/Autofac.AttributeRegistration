@@ -18,6 +18,9 @@ namespace Autofac
              
         [DefaultValue(true)]
         public bool AsImplementedInterface { get; set; }
+       
+        [DefaultValue(false)]
+        public bool AutoActivate { get; set; }
 
         protected void Register<TLimit>(IRegistrationBuilder<TLimit, ConcreteReflectionActivatorData, SingleRegistrationStyle> registrationBuilder, Type type)
         {
@@ -27,6 +30,8 @@ namespace Autofac
             if (AsImplementedInterface)
                 registrationBuilder.AsImplementedInterfaces();
 
+            if(AutoActivate)
+                registrationBuilder.AutoActivate();
         }
     }
 }
