@@ -84,7 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Autofac.AttributeRegistration\Autofac.AttributeRegistration.csproj">
-      <Project>{D796BF19-A6F7-4B44-AA2B-3723095B221B}</Project>
+      <Project>{8EE811D4-22C2-4963-9781-77BD814DB74D}</Project>
       <Name>Autofac.AttributeRegistration</Name>
     </ProjectReference>
   </ItemGroup>

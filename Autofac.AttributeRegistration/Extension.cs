@@ -10,7 +10,7 @@ namespace Autofac
         public static void RegisterByAttributes(this ContainerBuilder builder, params Assembly[] assemblies)
         {
             var registrations = from a in assemblies
-                                from type in a.GetTypes()
+                                from type in a.DefinedTypes
                                 from attribute in type.GetCustomAttributes(false)
                                 where attribute is AutofacRegistrationAttribute
                                 select new
@@ -22,7 +22,7 @@ namespace Autofac
 
             foreach (var registration in registrations)
             {
-                registration.Attribute.Register(builder, registration.Type);
+                registration.Attribute.Register(builder, registration.Type.AsType());
             }
         }     
     }
