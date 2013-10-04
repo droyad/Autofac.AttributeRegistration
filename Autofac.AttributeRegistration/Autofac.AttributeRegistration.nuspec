@@ -14,6 +14,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\Release\Autofac.AttributeRegistration.dll" target="lib\pportable-windows8+net45+windowsphone8" />
+    <file src="bin\Release\Autofac.AttributeRegistration.dll" target="lib\portable-windows8+net45+windowsphone8" />
   </files>
 </package>
