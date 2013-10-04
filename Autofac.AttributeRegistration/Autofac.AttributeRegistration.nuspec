@@ -12,8 +12,8 @@
     <dependencies>
       <dependency id="Autofac" version="3.1.1" />
     </dependencies>
-    <files>
-      <file src="bin\Release\Autofac.AttributeRegistration.dll" target="lib\pportable-windows8+net45+windowsphone8" />
-    </files>
   </metadata>
+  <files>
+    <file src="bin\Release\Autofac.AttributeRegistration.dll" target="lib\pportable-windows8+net45+windowsphone8" />
+  </files>
 </package>
