@@ -55,6 +55,7 @@
     <Compile Include="SingleInstance.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Autofac.AttributeRegistration.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

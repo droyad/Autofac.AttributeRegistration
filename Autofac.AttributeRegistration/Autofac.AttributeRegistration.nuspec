@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>Autofac.AttributeRegistration</id>
+    <version>$version$</version>
+    <title>Autofac.AttributeRegistration</title>
+    <authors>Robert Wagner</authors>
+    <owners>Robert Wagner</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Description</description>
+    <copyright>Copyright © 2013</copyright>
+    <dependencies>
+      <dependency id="Autofac" version="3.1.1" />
+    </dependencies>
+    <files>
+      <file src="bin\Release\Autofac.AttributeRegistration.dll" target="lib\pportable-windows8+net45+windowsphone8" />
+    </files>
+  </metadata>
+</package>
