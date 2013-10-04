@@ -15,5 +15,6 @@
   </metadata>
   <files>
     <file src="bin\Release\Autofac.AttributeRegistration.dll" target="lib\portable-windows8+net45+windowsphone8" />
+    <file src="bin\Release\Autofac.AttributeRegistration.dll" target="lib\net45" />
   </files>
 </package>
