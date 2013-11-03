@@ -10,7 +10,7 @@
     <description>Description</description>
     <copyright>Copyright © 2013</copyright>
     <dependencies>
-      <dependency id="Autofac" version="3.1.1" />
+      <dependency id="Autofac" version="3.0.0" />
     </dependencies>
   </metadata>
   <files>
