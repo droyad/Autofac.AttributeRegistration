@@ -19,7 +19,7 @@ namespace WindowsStoreTest
         }
 
         [Test]
-        public void NugetPackageIsInstalled()
+        public void NewlyBuiltNugetPackageWasInstalled()
         {
             Assert.AreEqual(GetVersion<Test>(), GetVersion<SingleInstance>());
         }

@@ -8,7 +8,7 @@ foreach($config in $configs)
 	 {
 		if($package.id -eq 'Autofac.AttributeRegistration')
 		{
-			$package.version = '$version';
+			$package.version = $version;
 		}
 	 }
 	 $xml.Save($config);
