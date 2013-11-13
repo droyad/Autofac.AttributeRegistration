@@ -35,8 +35,9 @@
     <Reference Include="Autofac">
       <HintPath>..\packages\Autofac.3.1.5\lib\net40\Autofac.dll</HintPath>
     </Reference>
-    <Reference Include="Autofac.AttributeRegistration">
-      <HintPath>..\packages\Autofac.AttributeRegistration.0.0.0.28-alpha\lib\net45\Autofac.AttributeRegistration.dll</HintPath>
+    <Reference Include="Autofac.AttributeRegistration, Version=0.0.0.30, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Autofac.AttributeRegistration.0.0.0.30-alpha\lib\portable-windows8+net45+net40+sl5+windowsphone8\Autofac.AttributeRegistration.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
