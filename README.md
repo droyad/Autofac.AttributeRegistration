@@ -1,5 +1,7 @@
 # Autofac.AttributeRegistration #
 
+[Nuget Package](https://www.nuget.org/packages/Autofac.AttributeRegistration)
+
 The best way to register your Autofac service is to use the [convention approach](http://docs.autofac.org/en/latest/register/scanning.html). However there are always exceptions to the rule, and sometimes the registration process needs to be done on a case by case basis. When this happens, we usually end up with something like this in the Autofac module or the container builder:
 
 	builder.RegisterType<Foo>().As<IFoo>().SingleInstance();
