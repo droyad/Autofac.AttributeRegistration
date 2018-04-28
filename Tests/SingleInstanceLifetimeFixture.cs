@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Autofac;
+﻿using Autofac;
 using NUnit.Framework;
 using FluentAssertions;
-using FluentAssertions.Assertions;
 
 namespace Tests
 {

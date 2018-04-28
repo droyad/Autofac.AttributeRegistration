@@ -1,6 +1,6 @@
 using Autofac;
-using Bddify;
 using NUnit.Framework;
+using TestStack.BDDfy;
 
 namespace Tests
 {
@@ -18,7 +18,7 @@ namespace Tests
         [Test]
         public void Execute()
         {
-            this.Bddify();
+            this.BDDfy();
         }
     }
 }

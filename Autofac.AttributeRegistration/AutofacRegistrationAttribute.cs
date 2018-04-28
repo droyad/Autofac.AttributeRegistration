@@ -24,9 +24,9 @@ namespace Autofac
 
         protected void Register<TLimit>(IRegistrationBuilder<TLimit, ConcreteReflectionActivatorData, SingleRegistrationStyle> registrationBuilder, Type type)
         {
-            registrationBuilder.AsSelf();
-
-            if (Name != null)
+            if(Name == null)
+                registrationBuilder.AsSelf();
+            else
                 registrationBuilder.Named(Name, type);
 
             if (AsImplementedInterface)
