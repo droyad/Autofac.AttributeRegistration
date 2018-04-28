@@ -1,10 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net451</TargetFrameworks>
-    <AssemblyTitle>Autofac.AttributeRegistration</AssemblyTitle>
+    <Title>Autofac.AttributeRegistration</Title>
     <Authors>Robert Wagner</Authors>
     <Owners>Robert Wagner</Owners>
-    <PackageProjectUrl>https://github.com/droyad/Autofac.AttributeRegistration</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/droyad/Autofac.AttributeRegistration</RepositoryUrl>
+    <Description>The best way to register your Autofac service is to use the convention approach. However there are always exceptions to the rule, and sometimes the registration process needs to be done on a case by case basis. This library provides a way to do this using attributes.</Description>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.0.0" />
